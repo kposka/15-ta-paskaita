@@ -1,0 +1,27 @@
+.footer{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background:$footer;
+  background-size:cover;
+  background-position: center;
+  height:150px;
+  border-top: solid white 2px;
+  max-width:100%;
+   .socialMedia{
+     display:flex;
+     justify-content: space-between;
+     color:white;
+     i{
+       transform:scale(2);
+       margin:0 25px;
+     }
+     i:hover{
+       transform:scale(3);
+     }
+   }
+   .contacts{
+     color:$contacts-color;
+     font-family:$textFont;
+   }
+}

@@ -1,0 +1,86 @@
+.header{
+  position:relative;
+  display:flex;
+  justify-content: space-around;
+  height:400px;
+
+    .headerImage{
+      position:absolute;
+      background-image:$header_photo;
+      background-size: cover;
+      background-position:bottom;
+      width:100%;
+      height:100%;
+    }
+    .logo{
+      display:flex;
+      margin-top:10px;
+      width:320px;
+      height:100px;
+      background-color:rgba(255, 255, 255, 0.6);
+      z-index: 1;
+      border: solid $red 2px;
+      border-radius: 5px;
+      .photo{
+        z-index: 1;
+        margin:10px;
+        background-image:$logo_image;
+        width:75px;
+        height:75px;
+        background-size: cover;
+        margin-right:15px;
+      }
+      h1{
+        z-index: 1;
+        color:$red;
+        font-size: 22px;
+        width:200px;
+        font-family: $logoFont;
+        text-transform: uppercase;
+         span{
+           font-size:30px;
+           color:black;
+
+         }
+         h1::before{
+           content:"Y";
+           position:absolute;
+         }
+      }
+    }
+    .contacts{
+      margin-top:10px;
+      display:flex;
+      position:relative;
+      a{
+        color:white;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16px;
+        text-decoration: none;
+        padding:0 7px;
+        transition: 0.3s ease;
+        cursor: pointer;
+        text-transform: uppercase;
+        height:150px;
+      }
+      a::before{
+        content:"";
+        position: absolute;
+        width:2px;
+        height:2px;
+        background:crimson;
+        border-radius: 100%;
+        transform: translateX(-6px) translateY(15px);
+        transition: 0.5s ease;
+      }
+      a:hover{
+        margin: 0 20px;
+        transform: scaleY(0.8)
+      }
+      a:hover::before{
+        width:10px;
+        transform: translateX(-10px) translateY(15px);
+      }
+
+    }
+}

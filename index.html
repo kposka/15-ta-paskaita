@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app/css/style.css">
+    <link href='https://css.gg/facebook.css' rel='stylesheet'>
+    <link href='https://css.gg/instagram.css' rel='stylesheet'>
+    <link href='https://css.gg/twitter.css' rel='stylesheet'>
+    <title>Gulp template</title>
+  </head>
+  <body>
+  <div class="container">
+      <div class="header">
+        <div class="headerImage"></div>
+        <div class="logo">
+          <div class="photo"></div>
+          <h1>Italian cuisine<span> restaurant</span></h1>
+        </div>
+        <div class="contacts">
+          <a href="#map">Location</a>
+          <a href="#hours">Working hours</a>
+          <a href="#pizza">Meniu</a>
+          <a href="#booking">Book your table</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="buttons">
+          <button onclick="tabsChange(event, 'pizza')">Pizza</button>
+          <button onclick="tabsChange(event, 'pasta')">Pasta</button>
+          <button onclick="tabsChange(event, 'deserts')">Deserts</button>
+          <button onclick="tabsChange(event, 'potato')">Potato Dishes</button>
+        </div>
+        <div class="tabs">
+          <div id="pizza" class="tab">
+            <h1>Pizza</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div id="pasta" class="tab">
+            <h1>Home made pasta</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div id="deserts" class="tab">
+            <h1>Tiramisu </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div id="potato" class="tab">
+            <h1>Gnocchi</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+      </div>
+
+      <div class="location">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.5031066472334!2d25.284440115858782!3d54.68317378028086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd9416bfd21607%3A0x9ba67848fac5e107!2sUniversiteto%20g.%2C%20Vilnius!5e0!3m2!1sen!2slt!4v1635859465324!5m2!1sen!2slt"></iframe>
+        </div>
+        <ul>
+          <h4 id="hours">Darbo laikas:</h4>
+          <li>11:00 - 23:00</li>
+          <li>11:00 - 23:00</li>
+          <li>11:00 - 23:00</li>
+          <li>11:00 - 23:00</li>
+          <li>11:00 - 24:00</li>
+          <li>10:00 - 24:00</li>
+          <li>10:00 - 21:00</li>
+      </div>
+      <div id="booking">
+        <button id="reservation"> Reservations </button>
+      </div>
+      <div class="footer">
+        <div class="socialMedia">
+          <i class="gg-facebook"></i>
+          <i class="gg-instagram"></i>
+          <i class="gg-twitter"></i>
+        </div>
+        <div class="contacts">
+          <p> 3 Universiteto St., LT-01513 Vilnius <br>
+              Phone: +370 9 268 7000 <br>
+              E-mail: ItalianCuisine@gmail.com <br>
+              Institutional Code: 211950810 <br>
+              VAT Number: LT119508113 <br> </p>
+        </div>
+      </div>
+  </div>
+
+
+
+    <script src="javascript.js">
+
+    </script>
+  </body>
+</html>

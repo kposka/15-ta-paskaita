@@ -1,0 +1,69 @@
+.content{
+  width:100%;
+  // height:1000px;
+  background:linear-gradient(to bottom, #07080a, black);
+  .buttons{
+    display:flex;
+    justify-content: space-around;
+    padding-top:10px;
+
+      button{
+        width:calc(25% - 25px);
+        height:50px;
+        background: white;
+        color:black;
+        font-weight: bold;
+        transition: 0.5s ease;
+    }
+    button:hover{
+      transform: scale(1.05);
+      background:#BD1616;
+      color:white;
+      font-size: 20px;
+    }
+  }
+  .tabs{
+    display:flex;
+    justify-content: space-around;
+      .tab{
+        margin:0 10px;
+        background:white;
+        padding:50px;
+        display:none;
+        height:500px;
+        h1{
+          text-align: center;
+          font-size:45px;
+          font-family:$tabsh1Font;
+        }
+         p{
+           background:rgba(255, 255, 255, 0.6);
+           border-radius:5px;
+           padding:7px;
+           font-size:25px;
+           text-align: center;
+           font-family:$textFont;
+         }
+      }
+      #pasta{
+        background-image:$pasta;
+        background-position: center;
+        background-size:cover;
+      }
+      #pizza{
+        background:$pizza;
+        background-position: center;
+        background-size:cover;
+      }
+      #potato{
+        background:$gnochi;
+        background-position: center;
+        background-size:cover;
+      }
+      #deserts{
+        background:$tiramisu;
+        background-position: center;
+        background-size:cover;
+      }
+  }
+}

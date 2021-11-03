@@ -1,0 +1,21 @@
+#booking{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:$reservation-background;
+  height:350px;
+    button{
+      width:50%;
+      height:150px;
+      margin:0 auto;
+      color:$red;
+      font-weight: bold;
+      font-size:35px;
+      text-transform: uppercase;
+      border-radius:15px;
+      transition: 0.3s ease;
+    }
+    button:hover{
+      transform: scale(1.2)
+    }
+}

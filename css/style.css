@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Lobster&family=PT+Sans+Caption&family=Rampart+One&family=Recursive:wght@300&family=Roboto+Mono&family=Space+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 400px; }
+  .header .headerImage {
+    position: absolute;
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%; }
+  .header .logo {
+    display: flex;
+    margin-top: 10px;
+    width: 320px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    border: solid #BD1616 2px;
+    border-radius: 5px; }
+    .header .logo .photo {
+      z-index: 1;
+      margin: 10px;
+      background-image: url("pasta.png");
+      width: 75px;
+      height: 75px;
+      background-size: cover;
+      margin-right: 15px; }
+    .header .logo h1 {
+      z-index: 1;
+      color: #BD1616;
+      font-size: 22px;
+      width: 200px;
+      font-family: "Rampart One", cursive;
+      text-transform: uppercase; }
+      .header .logo h1 span {
+        font-size: 30px;
+        color: black; }
+      .header .logo h1 h1::before {
+        content: "Y";
+        position: absolute; }
+  .header .contacts {
+    margin-top: 10px;
+    display: flex;
+    position: relative; }
+    .header .contacts a {
+      color: white;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 0 7px;
+      transition: 0.3s ease;
+      cursor: pointer;
+      text-transform: uppercase;
+      height: 150px; }
+    .header .contacts a::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: crimson;
+      border-radius: 100%;
+      transform: translateX(-6px) translateY(15px);
+      transition: 0.5s ease; }
+    .header .contacts a:hover {
+      margin: 0 20px;
+      transform: scaleY(0.8); }
+    .header .contacts a:hover::before {
+      width: 10px;
+      transform: translateX(-10px) translateY(15px); }
+
+.content {
+  width: 100%;
+  background: linear-gradient(to bottom, #07080a, black); }
+  .content .buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px; }
+    .content .buttons button {
+      width: calc(25% - 25px);
+      height: 50px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      transition: 0.5s ease; }
+    .content .buttons button:hover {
+      transform: scale(1.05);
+      background: #BD1616;
+      color: white;
+      font-size: 20px; }
+  .content .tabs {
+    display: flex;
+    justify-content: space-around; }
+    .content .tabs .tab {
+      margin: 0 10px;
+      background: white;
+      padding: 50px;
+      display: none;
+      height: 500px; }
+      .content .tabs .tab h1 {
+        text-align: center;
+        font-size: 45px;
+        font-family: "Lobster", cursive; }
+      .content .tabs .tab p {
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 5px;
+        padding: 7px;
+        font-size: 25px;
+        text-align: center;
+        font-family: "Space Mono", monospace; }
+    .content .tabs #pasta {
+      background-image: url("freshpasta.jpg");
+      background-position: center;
+      background-size: cover; }
+    .content .tabs #pizza {
+      background: url("piza.jpg");
+      background-position: center;
+      background-size: cover; }
+    .content .tabs #potato {
+      background: url("gnochi.jpg");
+      background-position: center;
+      background-size: cover; }
+    .content .tabs #deserts {
+      background: url("tiramisu.jpg");
+      background-position: center;
+      background-size: cover; }
+
+.location {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, #07080a, black); }
+  .location #map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .location #map h1 {
+      color: white;
+      text-transform: uppercase;
+      font-family: "Space Mono", monospace; }
+    .location #map iframe {
+      margin-top: 20px;
+      width: 600px;
+      align-items: center;
+      height: 400px; }
+  .location ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    list-style-type: lower-roman;
+    color: #BD1616;
+    font-size: 28px;
+    font-family: "Space Mono", monospace; }
+    .location ul h4 {
+      margin-right: 10px; }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("footer.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  border-top: solid white 2px;
+  max-width: 100%; }
+  .footer .socialMedia {
+    display: flex;
+    justify-content: space-between;
+    color: white; }
+    .footer .socialMedia i {
+      transform: scale(2);
+      margin: 0 25px; }
+    .footer .socialMedia i:hover {
+      transform: scale(3); }
+  .footer .contacts {
+    color: #F3EFCC;
+    font-family: "Space Mono", monospace; }
+
+#booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191A19;
+  height: 350px; }
+  #booking button {
+    width: 50%;
+    height: 150px;
+    margin: 0 auto;
+    color: #BD1616;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    transition: 0.3s ease; }
+  #booking button:hover {
+    transform: scale(1.2); }
+
+.input {
+  width: 300px;
+  height: 75px;
+  font-size: 20px; }
+
+input {
+  margin-bottom: 25px;
+  transform: scale(1.5); }
+
+#submit {
+  width: 150px;
+  color: black;
+  font-size: 20px; }
